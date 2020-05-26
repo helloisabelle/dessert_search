@@ -1,9 +1,15 @@
-
+@font-face {
+  font-family: "g";
+  src: url("j2.ttf");
+}
 
 body{
+    font-family: g;
     width: 100%;
      background: #007bff;
     background: linear-gradient(to top right, #0062E6, #33AEFF);
+    text-shadow: 1px 1px 5px #957dff;
+    font-weight: 900;
 }
 
 #sel{
@@ -25,7 +31,7 @@ body{
   margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
-  color: #33AEFF;
+  color: #cbc2ff;
   padding-left: 3%;
 }
 

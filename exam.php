@@ -22,8 +22,8 @@ function request($host, $path, $url_params = array()) {
         $url = $host . $path . "?" . http_build_query($url_params);
         curl_setopt_array($curl, array(
             CURLOPT_URL => $url,
-            CURLOPT_RETURNTRANSFER => true,  // Capture response.
-            CURLOPT_ENCODING => "",  // Accept gzip/deflate/whatever.
+            CURLOPT_RETURNTRANSFER => true, 
+            CURLOPT_ENCODING => "",  
             CURLOPT_MAXREDIRS => 10,
             CURLOPT_TIMEOUT => 30,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
@@ -141,8 +141,6 @@ function getUnix(){
     return strtotime($x);
 
 }
-
-
 
 ?>
 
