@@ -6,8 +6,7 @@
 body{
     font-family: g;
     width: 100%;
-     background: #007bff;
-    background: linear-gradient(to top right, #0062E6, #33AEFF);
+    background: linear-gradient(to top right, #ffffff, #d1beff);
     text-shadow: 1px 1px 5px #957dff;
     font-weight: 900;
 }
@@ -23,7 +22,7 @@ body{
 }
 
 #n{
-  background-color: #510091;
+  background-color: #423f44;
   width: 98%;
   border-radius: 15px;
   font-size: 20px;
@@ -76,8 +75,8 @@ a:hover{
   border: none;
   border-radius: 1rem;
   transition: all 0.2s;
-  background: linear-gradient(to right, #6666ff, #619dff);
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #e5e5e8, #e5e5e8);
+  box-shadow: 5px 0px 1px rgba(27, 26, 26, 0.91);
 }
 
 .pricing hr {

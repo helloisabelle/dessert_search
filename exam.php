@@ -2,7 +2,6 @@
 <?php
 
 $API_KEY = '6OPB4UKOMYlTVP72qoq34HBB8hCLWm-beHnPtAFgh1V81f5pHlKgB2cIDE9tSoHX6Sqh0O1lxA7b6sm6N6_8tR3k7WwbWullpVwiyoTOaQ1nfOgsxmiV2y1opRSUXnYx';
-
 $API_HOST = "https://api.yelp.com";
 $SEARCH_PATH = "/v3/businesses/search";
 $BUSINESS_PATH = "/v3/businesses/";
