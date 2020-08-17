@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,42 +54,27 @@
 
 </body>
 
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
-
-
-
-
-
 <script>
-	
 	$('#now').on('click', function(e) {
-    if($(this).prop("checked") == true){
-        var d = new Date();
-        let x = d.getHours() + ":";
-        if (d.getMinutes() < 10){
-          x+="0";
+        if($(this).prop("checked") == true){
+            var d = new Date();
+            let x = d.getHours() + ":";
+            if (d.getMinutes() < 10){
+            x+="0";
+            }
+            x+= d.getMinutes();
+
+            $("#time").val(x);
         }
-        x+= d.getMinutes();
-
-        $("#time").val(x);
-    }
-    else if($(this).prop("checked") == false){
-        $("#time").val("");
-    }
-    
-  });
-
+        else if($(this).prop("checked") == false){
+            $("#time").val("");
+        }
+    });
 </script>
-
-</script> 
 
 </html>
 
