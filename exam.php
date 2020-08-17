@@ -1,5 +1,6 @@
 
 <?php
+    date_default_timezone_set('America/Los_Angeles');
     $API_KEY = '5n03Og1T-_ldbICV5t5j2_6aTqkGeBtSPIpLqQHQULJtmk8JiE5ptJ-6mxN-nBkhR_ubnM5wXLTEpNmSeybXw9lilDwdp-UJJsWpChZIgkWtaonS45mpKa_zTtg5X3Yx';
     $API_HOST = "https://api.yelp.com";
     $SEARCH_PATH = "/v3/businesses/search";
