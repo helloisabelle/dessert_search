@@ -9,7 +9,7 @@
     $location = $_GET["loc_field"];
     $name = $term;
     $address = $location;
-    console.log($_GET["loc_field"]);
+    echo $_GET["loc_field"];
     console.log($location + 'here!!');
     function request($host, $path, $url_params = array()) {
         try {
@@ -60,8 +60,8 @@
         $url_params['sort_by'] = $_GET["sel"];
         $url_params['open_at'] = getUnix();
 
-        console.log($location + 'here');
-        console.log($url_params['location']);
+        echo $location ;
+        echo $url_params['location'];
         
         return request($GLOBALS['API_HOST'], $GLOBALS['SEARCH_PATH'], $url_params);
     }
