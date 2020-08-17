@@ -26,7 +26,7 @@
                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                 CURLOPT_CUSTOMREQUEST => "GET",
                 CURLOPT_HTTPHEADER => array(
-                    "authorization: Bearer " . $GLOBALS['API_KEY'],
+                    "authorization: Bearer " . $API_KEY,
                     "cache-control: no-cache",
                 ),
             ));
@@ -58,9 +58,9 @@
         $url_params['location'] = $location;
         $url_params['limit'] = 5;
         $url_params['sort_by'] = $_GET["sel"];
-        $url_params['open_at'] = getUnix();
+        if (strlen($_GET["time_field"]) > 0) $url_params['open_at'] = getUnix();
         
-        return request($GLOBALS['API_HOST'], $GLOBALS['SEARCH_PATH'], $url_params);
+        return request($API_HOST, $SEARCH_PATH, $url_params);
     }
 
     function query_api($term, $location) {
