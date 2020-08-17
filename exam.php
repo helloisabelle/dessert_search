@@ -162,7 +162,7 @@ function getUnix(){
 <body>
 
 
-    <div id = "n"><a href = "res.php" style = "text-decoration: none;">Dessert Search</a></div>
+    <div id = "n"><a href = "index.php" style = "text-decoration: none;">Dessert Search</a></div>
 
 
 <?php

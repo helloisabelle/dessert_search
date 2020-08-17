@@ -21,7 +21,7 @@
 
 <body>
 
-    <div id = "n"><a href = "res.php" style = "text-decoration: none;">Dessert Search</a></div>
+    <div id = "n"><a href = "index.php" style = "text-decoration: none;">Dessert Search</a></div>
 
     <form id = "s" class="pure-form pure-form-stacked" action = "exam.php" method = "GET">
 	    <fieldset>
