@@ -1,1 +1,0 @@
-[23-May-2020 23:30:47 UTC] PHP Fatal error:  Curl failed with error #400: {"error": {"code": "VALIDATION_ERROR", "description": "Please specify a location or a latitude and longitude"}} in /home/isabelln/public_html/dessert/dessert_search/exam.php on line 50

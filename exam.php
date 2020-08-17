@@ -9,8 +9,7 @@
     $location = $_GET["loc_field"];
     $name = $term;
     $address = $location;
-    echo $_GET["loc_field"];
-    console.log($location + 'here!!');
+
     function request($host, $path, $url_params = array()) {
         try {
             $curl = curl_init();
@@ -42,6 +41,7 @@
 
             curl_close($curl);
         } catch(Exception $e) {
+            echo $$e->getMessage();
             trigger_error(sprintf(
                 'Curl failed with error #%d: %s',
                 $e->getCode(), $e->getMessage()),
@@ -59,9 +59,6 @@
         $url_params['limit'] = 5;
         $url_params['sort_by'] = $_GET["sel"];
         $url_params['open_at'] = getUnix();
-
-        echo $location ;
-        echo $url_params['location'];
         
         return request($GLOBALS['API_HOST'], $GLOBALS['SEARCH_PATH'], $url_params);
     }
