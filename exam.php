@@ -135,8 +135,10 @@
         $m = $todayh["month"];
         $y = $todayh["year"];
         $x = $d  ." " . $m . " " . $y . " " . $_GET["time_field"] . " PST";
-        return strtotime($x);
-
+        echo $x;
+        $z = strtotime($x);
+        echo $z;
+        return $z;
     }
 ?>
 
