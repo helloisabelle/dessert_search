@@ -94,7 +94,7 @@
                             else echo "<i class = 'fa fa-star-o'></i> ";
                         }
 
-                        echo $response->businesses[$i]->review_count." reviews</div>
+                        echo "  " .$response->businesses[$i]->review_count." reviews</div>
                         <div>Distance: " .getMiles($response->businesses[$i]->distance). " miles away from ". $GLOBALS['name'] . "</div> <div>Address: ".$full_add . "</div>
                         </div>";
             if ($i != count($response->businesses) - 1) echo "<hr>";
@@ -136,10 +136,7 @@
         $m = $todayh["month"];
         $y = $todayh["year"];
         $x = $d  ." " . $m . " " . $y . " " . $_GET["time_field"] . " PST";
-        echo $x;
-        $z = strtotime($x);
-        echo $z;
-        return $z;
+        return strtotime($x);
     }
 ?>
 
@@ -158,26 +155,16 @@
 </head>
 
 <body>
-
-
     <div id = "n"><a href = "index.php" style = "text-decoration: none;">Dessert Search</a></div>
-
-
-<?php
-
-
-if (isset($_GET["name_field"]) && !empty($_GET["name_field"])){
-    $address = query_api1($term,$location);
-
-    if ($address == $location){
-        $name = $location;
-    }
-}
-else{
-    $name = $location;
-}
-
-?>
+    <?php
+        if (isset($_GET["name_field"]) && !empty($_GET["name_field"])){
+            $address = query_api1($term,$location);
+            if ($address == $location) $name = $location;
+        }
+        else{
+            $name = $location;
+        }
+    ?>
 <section class="pricing py-5">
   <div class="container">
     <div class="row">
