@@ -58,6 +58,8 @@
         $url_params['limit'] = 5;
         $url_params['sort_by'] = $_GET["sel"];
         $url_params['open_at'] = getUnix();
+
+        console.log($url_params['location']);
         
         return request($GLOBALS['API_HOST'], $GLOBALS['SEARCH_PATH'], $url_params);
     }
